@@ -6,6 +6,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
   { ignores: ['dist'] },
+  
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -23,9 +24,6 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
-    env: {
-      node: true,
-    },
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
@@ -37,5 +35,8 @@ export default [
         { allowConstantExport: true },
       ],
     },
+    env: {
+      node: true
+    }
   },
 ]

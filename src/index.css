@@ -1,19 +1,25 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 body {
   margin: 0;
+  font-family: "Electrolize", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-}
 
-.rounded-full {
-  border-radius: calc(infinity * 1px);
-}
 
-.badge {
-  @media (width >= 48rem /* 768px */) {
+
+@media (min-width: 768px){
+  body{
+    overflow: hidden;
+  }
+  .ant-btn-primary {
+    background-color: #1677ff;
+  }
+  
+  .categories::-webkit-scrollbar {
     display: none;
   }
 }
