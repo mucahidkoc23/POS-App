@@ -33,7 +33,7 @@ const Header = () => {
             <HomeOutlined className="md:text-2xl text-xl" />
             <span className="md:text-xs text-[10px]">Ana Sayfa</span>
           </a>
-          <Badge count={5} offset={[0,6]} className="md:flex hidden">
+          <Badge count={5} offset={[0, 6]} className="md:flex hidden">
             <a
               href={"/"}
               className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
@@ -71,15 +71,15 @@ const Header = () => {
             <span className="md:text-xs text-[10px]">Çıkış</span>
           </a>
         </div>
-        <Badge count={5} offset={[0,6]} className="md:hidden flex">
-            <a
-              href={"/"}
-              className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
-            >
-              <ShoppingCartOutlined className="text-2xl" />
-              <span className="md:text-xs text-[10px]">Sepet</span>
-            </a>
-          </Badge>
+        <Badge count={5} offset={[0, 6]} className="md:hidden flex">
+          <a
+            href={"/"}
+            className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
+          >
+            <ShoppingCartOutlined className="text-2xl" />
+            <span className="md:text-xs text-[10px]">Sepet</span>
+          </a>
+        </Badge>
       </header>
     </div>
   );
